@@ -9,7 +9,7 @@ const IsoNo = (city:string):{ iso:string, name:string }=> {
 
 
 const GetData= (city:string, country:string, day:number, month:number, year:number) => {
-    fetch(`http://api.aladhan.com/v1/calendarByCity?city=${city}&country=${country}&month=${month}&year=${year}`)
+    fetch(`https://api.aladhan.com/v1/calendarByCity?city=${city}&country=${country}&month=${month}&year=${year}`)
     .then(res => res.json())
     .then(result => {
         

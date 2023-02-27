@@ -8,7 +8,7 @@ const IsoNo = (city) => {
     }
 };
 const GetData = (city, country, day, month, year) => {
-    fetch(`http://api.aladhan.com/v1/calendarByCity?city=${city}&country=${country}&month=${month}&year=${year}`)
+    fetch(`https://api.aladhan.com/v1/calendarByCity?city=${city}&country=${country}&month=${month}&year=${year}`)
         .then(res => res.json())
         .then(result => {
         const header = document.querySelector('header');
